@@ -8,7 +8,8 @@
 
 function triangleAreaFromCoords (points) {
   [A, B, C] = points
-  return 0.5 * ((A.x * B.x + B.x * C.x + C.x * A.x) - (A.y * B.y + B.y * C.y + C.y * A.y))
+  let shoeStr =(A.x * B.y + B.x * C.y + C.x * A.y) - (A.y * B.x + B.y * C.x + C.y * A.x)
+  return Math.abs(0.5 * shoeStr)
 }
 
 module.exports = triangleAreaFromCoords

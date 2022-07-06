@@ -16,7 +16,7 @@
  * @param {{x: number, y: number}[]} rectangle2 - The four corners of rectangle 2
  */
 function rectangleOverlap (rectangle1, rectangle2) {
-  // idk tbh :/
+  return (rectangle2[0][0]-rectangle1[0][0])*(rectangle2[2][1]-rectangle1[2][1])
 }
 
 module.exports = rectangleOverlap
